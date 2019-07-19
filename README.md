@@ -24,6 +24,9 @@ Then the resulting inverted index is
 }
 ```
 
+### Strategy
+For this problem, the code utilizes Spark for distributed computing. Each document is read in, and a dictionary keeping track of the documents containing each word (where the key is a word and the values a list of the documents) is updated after each document.
+
 ### Data
 The text documents used for this code base are from the Project Gutenberg text corpi. They can be found [here](https://github.com/Samariya57/coding_challenges/tree/master/data/indexing).
 
